@@ -3,65 +3,73 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-header {
+  }
+  
+  header {
     position: relative;
     width: 100%;
     height: 80vh;
-    background: url('image/yogkarta.jpg') no-repeat center center/cover;
+    background: url("image/jogja.jpeg") no-repeat center center/cover;
     color: #ffffff;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 150px; /* Atur lebar gambar */
     height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
-
-.nav-links {
-    list-style: none;
+    padding: 20px 50px;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 150px; /* Atur lebar gambar */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
+  }
+  
+  nav ul {
     display: flex;
+    list-style: none;
     margin-left: auto;
-}
-
-.nav-links li {
-    margin: 0 10px;
-}
-
-.nav-links a {
-    text-decoration: none;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
     color: white;
-    font-size: 1em;
-}
-
-.nav-right {
+    text-decoration: none;
+  }
+  
+  .lang-login {
     display: flex;
     align-items: center;
-}
-
-.nav-right img {
-    width: 30px;
-    height: 20px;
+  }
+  
+  .lang img {
+    width: 24px;
+    height: 24px;
     margin-right: 10px;
-}
-
-.nav-right button {
-    background-color: #31304D;
+  }
+  
+  .login-btn {
+    background-color: #31304d;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero {
+  }
+  
+  .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,320 +77,241 @@ nav {
     text-align: center;
     height: 100%;
     color: #ffffff;
-}
-
-.hero h1 {
+  }
+  
+  .hero h1 {
     font-size: 4em;
     margin-bottom: 20px;
-}
-
-.hero p {
+  }
+  
+  .hero p {
     font-size: 1.2em;
     width: 60%;
-}
-
-.introduction {
+  }
+  
+  .introduction {
     padding: 50px 20px;
     text-align: center;
-}
-
-.introduction h2 {
+  }
+  
+  .introduction h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-}
-
-.introduction p {
+  }
+  
+  .introduction p {
     font-size: 1.2em;
     margin-bottom: 20px;
-}
-
-.intro-images {
+  }
+  
+  .intro-images {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.intro-images img {
-    width: 200px
-}
-
-.hot-right-now {
+  }
+  
+  .intro-images img {
+    width: 200px;
+  }
+  
+  .hot-right-now {
     padding: 50px 20px;
     background-color: #f5f5f5;
-}
-
-.hot-right-now h2 {
+  }
+  
+  .hot-right-now h2 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 30px;
-}
-
-.cards {
+  }
+  
+  .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-}
-
-.card {
+  }
+  
+  .card {
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-}
-
-.card img {
+  }
+  
+  .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-.card-body {
+  }
+  
+  .card-body {
     padding: 20px;
-}
-
-.card-body h3 {
+  }
+  
+  .card-body h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-}
-
-.card-body p {
+  }
+  
+  .card-body p {
     font-size: 1em;
     margin-bottom: 10px;
-}
-
-.tag {
+  }
+  
+  .tag {
     display: inline-block;
-    background: #31304D;
+    background: #31304d;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 5px;
     font-size: 0.8em;
-}
-
-.rating {
+  }
+  
+  .rating {
     margin-top: 10px;
     font-size: 1em;
     color: #f39c12;
-}
-
-.pagination {
+  }
+  
+  .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.pagination span {
+  }
+  
+  .pagination span {
     margin: 0 5px;
     padding: 10px 20px;
     background: white;
     border: 1px solid #ddd;
     cursor: pointer;
-}
-
-.pagination .active {
-    background: #31304D;
+  }
+  
+  .pagination .active {
+    background: #31304d;
     color: white;
-}
-
-.popular-destinations {
+  }
+  
+  .popular-destinations {
     padding: 50px 20px;
     background-color: #dff7ff;
-}
-
-.popular-destinations h2 {
+  }
+  
+  .popular-destinations h2 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 30px;
-}
-
-.destinations {
+  }
+  
+  .destinations {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
-}
-
-.destinations {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-}
-
-.destination {
+  }
+  
+  .destination {
     width: 100%;
     max-width: 300px;
     height: 200px;
-    background-size: cover;
+    background: url("image/hotel1.jpg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 1.5em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-}
-
-.destination:nth-child(1) {
-    background-image: url('image/yogkarta.jpg');
-}
-
-.destination:nth-child(2) {
-    background-image: url('image/PantaiOra.png');
-}
-
-.destination:nth-child(3) {
-    background-image: url('image/rajaampat.jpg');
-}
-
-.destination:nth-child(4) {
-    background-image: url('image/bali.jpg');
-}
-
-.destination:nth-child(5) {
-    background-image: url('image/magelang.jpg');
-}
-
-.destination:nth-child(6) {
-    background-image: url('image/jakarta.jpg');
-}
-
-
-.show-more {
+  }
+  
+  .show-more {
     display: block;
     margin: 30px auto;
     padding: 10px 20px;
-    background: #31304D;
+    background: #31304d;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-footer {
-    background-color: #31304D;
+  }
+  
+  footer {
+    background: #003366;
     color: white;
-    padding: 0px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-content {
+    padding: 50px 20px;
+  }
+  
+  .footer-content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
+    align-items: flex-start;
     margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.footer-left,
-.footer-links,
-.footer-social {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-}
-
-.footer-left h2,
-.footer-links h2,
-.footer-social h2 {
-    font-size: 1.5em;
+  }
+  
+  .footer-left h2 {z
+    font-size: 2em;
     margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-.footer-left p {
+  }
+  
+  .footer-left p {
     font-size: 1em;
     line-height: 1.5;
-}
-
-.footer-links ul,
-.footer-social ul {
+  }
+  
+  .footer-links h2,
+  .footer-social h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links ul li,
-.footer-social ul li {
+  }
+  
+  .footer-links ul li,
+  .footer-social ul li {
     margin-bottom: 10px;
-}
-
-.footer-links ul li a,
-.footer-social ul li a {
-    color: white;
+  }
+  
+  .footer-links ul li a,
+  .footer-social ul li a {
     text-decoration: none;
+    color: white;
     font-size: 1em;
-    transition: color 0.3s;
-}
-
-.footer-links ul li a:hover,
-.footer-social ul li a:hover {
-    color: #4CAF50;
-}
-
-.footer-social ul {
+  }
+  
+  .subscribe-form {
     display: flex;
-    justify-content: center;
-}
-
-.footer-social ul li {
-    margin: 0 10px;
-}
-
-.footer-social ul li img {
-    width: 24px; /* Adjust the size as needed */
-    height: 24px; /* Adjust the size as needed */
-    transition: transform 0.3s;
-}
-
-.footer-social ul li img:hover {
-    transform: scale(1.2); /* Scale up on hover */
-}
-
-.subscribe-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.subscribe-form input[type="email"] {
+  }
+  
+  .subscribe-form input {
     padding: 10px;
     border: none;
     border-radius: 5px 0 0 5px;
     outline: none;
-    min-width: 200px;
-}
-
-.subscribe-form button {
-    padding: 10px;
-    background-color: #4CAF50;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    background: #f39c12;
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.subscribe-form button:hover {
-    background-color: #45a049;
-}
-
-.footer-bottom {
-    background-color: #222;
-    color: white;
+  }
+  
+  .footer-bottom {
     text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
-
-.footer-bottom p {
-    margin: 0;
     font-size: 0.9em;
-}
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+  
