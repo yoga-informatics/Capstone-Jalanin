@@ -1,0 +1,384 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+/* Start Header */
+.header__menu {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #023e8a69;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 150px; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background: #fff;
+  /* padding: 20px 0; */
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  font-size: 1.2em;
+  color: #999;
+}
+
+.header h2 {
+  font-size: 2em;
+  margin-top: 5px;
+  color: #000;
+}
+
+.header .rating {
+  margin-top: 10px;
+  color: #f39c12;
+}
+
+.header .price {
+  float: right;
+  text-align: right;
+}
+
+.header .price span {
+  font-size: 1.5em;
+  color: #e67e22;
+}
+
+.header .booking-btn {
+  background: #1abc9c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* End Header */
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-section {
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+}
+
+.team-member img {
+  width: 100%;
+  height: 350px;
+}
+
+.team-member h3 {
+  margin: 15px 0 10px;
+}
+
+.team-member p {
+  color: #555;
+}
+
+.team-member button {
+  padding: 10px;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.team-member button:hover {
+  background-color: #005f91;
+}
+
+/* Footer */
+footer {
+  background-color: #31304d;
+  color: white;
+  padding: 20px 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-left h2,
+.footer-links h2,
+.footer-social h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social ul li {
+  margin: 0 10px;
+}
+
+.footer-social ul li img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.footer-social ul li img:hover {
+  transform: scale(1.2);
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  min-width: 200px;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #45a049;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .team-member {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-social {
+    min-width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 157px 0px;
+  }
+  nav {
+    flex-direction: column;
+    padding: 10px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  .open {
+    transform: translateY(0);
+  }
+  ul {
+    display: none;
+    flex-direction: column;
+  }
+  .open ul {
+    display: flex;
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  #menu {
+    margin-top: 10px;
+    align-self: center;
+  }
+  .header__menu {
+    font-size: 45px;
+    margin: 10px auto;
+    display: block;
+    width: 48px;
+    background: none;
+    border: none;
+  }
+  .team-section h2 {
+    font-size: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .footer-left h2,
+  .footer-links h2,
+  .footer-social h2 {
+    font-size: 1.2em;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input[type="email"] {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form button {
+    border-radius: 0 0 5px 5px;
+  }
+  .footer-links {
+    display: none;
+  }
+}
+.hidden {
+  display: none;
+}
